@@ -23,6 +23,7 @@ Master’s thesis on reinforcement learning for dynamic portfolio optimization u
   </p>
 </div>
 
+
 # Abstract
 
 This thesis proposes a **reinforcement learning (RL)** framework to dynamically optimize long-only portfolios in volatile markets.  
@@ -73,3 +74,27 @@ rl-portfolio-optimization/
 | Post-2020 Recovery            | +112%         | +81%         | —            | +31% faster        |
 
 > **Note:** All results are precomputed. The `results/` folder contains equity curves, drawdowns, and analytical plots. Full code for training and backtesting is in 'Thesis2.ipynb'.
+> # Project 2 — Momentum + Trend-Following Trading System *(Work in Progress)*
+
+# Strategy Objective
+Build a **systematic long-only momentum + trend-following trading system** that:  
+
+- Captures medium-term trends in high-quality stocks and Bitcoin  
+- Avoids major drawdowns during crashes and bear markets  
+- Maintains reasonable volatility and strong risk-adjusted returns  
+
+# Target Markets
+- Large-cap US technology & growth stocks: **AAPL, MSFT, AMZN, NVDA, META**  
+- **Bitcoin (BTC-USD)** as a high-volatility diversifier  
+
+# Trading Frequency
+- Daily signals and position updates (low turnover expected)  
+- Rebalance / check every trading day (close of day)  
+
+# Core Idea / Edge
+- Trend filter: **MA50 > MA200**  
+- Momentum confirmation: positive **20-day return**  
+- Avoid buying weakening trends or after big run-ups  
+- **Inverse volatility weighting** to reduce exposure to most volatile assets  
+
+>  *Code, backtests, and results will be added once the strategy is fully implemented.*
