@@ -36,10 +36,9 @@ Portfolio allocation is framed as a Markov Decision Process and agents are train
 - 2022 bear market: drawdown halved through autonomous sector rotation
 - Diebold-Mariano test: p < 0.001 vs all benchmarks
 
-The PPO agent demonstrates **crisis alpha**, **negative beta during crashes**, and **autonomous regime adaptation**, making it a promising approach with strong out-of-sample performance compared to traditional portfolio strategies.
+The PPO agent demonstrates evidence of improved performance during crisis periods and adaptive behavior across different market regimes, making it a promising alternative to classical portfolio optimization approaches.
 
 # Repository Structure
-
 rl-portfolio-optimization/
 ├── data/ # Raw & processed market data (not committed)
 ├── notebooks/ # Exploratory analysis & ablation studies
