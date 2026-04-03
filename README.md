@@ -36,7 +36,7 @@ Portfolio allocation is framed as a Markov Decision Process and agents are train
 - 2022 bear market: drawdown halved through autonomous sector rotation
 - Diebold-Mariano test: p < 0.001 vs all benchmarks
 
-The PPO agent demonstrates **crisis alpha**, **negative beta during crashes**, and **autonomous regime adaptation**, making it a production-ready alternative to classical mean-variance optimization.
+The PPO agent demonstrates **crisis alpha**, **negative beta during crashes**, and **autonomous regime adaptation**, making it a promising approach with strong out-of-sample performance compared to traditional portfolio strategies.
 
 # Repository Structure
 
@@ -74,6 +74,44 @@ rl-portfolio-optimization/
 | Post-2020 Recovery            | +112%         | +81%         | —            | +31% faster        |
 
 > **Note:** All results are precomputed. The `results/` folder contains equity curves, drawdowns, and analytical plots. Full code for training and backtesting is in 'Thesis2.ipynb'.
+> ## Key Insight
+
+The RL agent learns to dynamically adjust portfolio exposure based on market conditions, reducing risk during high-volatility periods and reallocating capital across assets to maintain stable performance.
+
+This behavior allows the model to act as an adaptive risk manager rather than a static allocation strategy.
+## For Recruiters
+
+This project demonstrates:
+
+- Reinforcement Learning (PPO, DDPG)
+- Financial time-series modeling
+- Feature engineering (macro, sentiment, volatility)
+- Risk-aware portfolio optimization
+- End-to-end ML pipeline (data → training → evaluation)
+- Application of AI in financial markets
+- ## Implementation Details
+
+- Framework: RLlib  
+- Language: Python 3.8+  
+- Environment: Custom Gym-style trading environment  
+- Data sources: Yahoo Finance, FRED, FinBERT sentiment  
+- Training: Walk-forward validation with strict out-of-sample testing
+
+ ## Visual Results
+
+### Out-of-Sample Performance (2020–2023)
+![Equity Curve](results/equity_curve.png)
+
+### Risk vs Return Profile
+![Risk Return](results/risk_return.png)
+
+### Drawdown Analysis
+![Drawdown](results/drawdown.png)
+
+### Behavior During Market Crash (COVID-19)
+![COVID](results/covid_behavior.png)
+
+These figures illustrate the model's ability to maintain stable performance, reduce drawdowns, and adapt allocation during high-volatility market regimes.
 > # Project 2 — Momentum + Trend-Following Trading System *(Work in Progress)*
 
 # Strategy Objective
