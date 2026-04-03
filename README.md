@@ -108,10 +108,8 @@ This project demonstrates:
 ### Drawdown Analysis
 ![Drawdown](results/drawdown.png)
 
-### Behavior During Market Crash (COVID-19)
-![COVID](results/covid_behavior.png)
-
 These figures illustrate the model's ability to maintain stable performance, reduce drawdowns, and adapt allocation during high-volatility market regimes.
+
 > # Project 2 — Momentum + Trend-Following Trading System *(Work in Progress)*
 
 # Strategy Objective
